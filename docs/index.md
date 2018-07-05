@@ -1,17 +1,35 @@
-# Welcome to MkDocs
+# Bike3S Introduction
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+Bike3S is a simulator created for the purpose of testing different behaviors in real bike sharing systems. 
+Bike sharing systems allow citizens to move between different places in an simple and economical way. Bike3S offers us the possibility to
+execute situations using different infrastructure configurations, user models and balancing algorithms.
 
-## Commands
+The motivation of this project is to search strategies to balance the system resources using systems, typically, based on incentives, which recommend the users to rent or return a bike in a certain station to contribute to the system balancing
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+Here you'll find all the necessary documentation to use and develop new features in Bike3S.
 
-## Project layout
+## For Users
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+If you just want to run the simulator with preconfigured user behaviors in different cities around the world, just follow the next guide:
+
+[Users Guide](users_guide.md)
+
+## For Developers
+
+If you are a developer or researcher and wants to create new things for the simulator, you should start here. With this guide you will learn to
+
+* Configure and prepare your system for development. :computer:
+* Configure you're favorite IDE :hammer:
+* Learn the architecture and fundamentals of the simulator to implement new things. :pencil:
+* Implement different users behaviors :bicyclist:
+* Implement your own recommendation system :iphone:	
+
+And more...
+Feel free to see how to make all this fun stuff reading the Developers Guide:
+
+[Developers Guide](developers_guide.md)
+
+
+
+
+
