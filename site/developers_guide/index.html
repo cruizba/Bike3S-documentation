@@ -1,0 +1,417 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.2">
+    
+    
+      
+        <title>Developers Guide - Bike3S - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.ba0fd1a6.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#prerequisites" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Bike3S - Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Bike3S - Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Developers Guide
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Bike3S - Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../users_guide/" title="Users Guide" class="md-nav__link">
+      Users Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Developers Guide" class="md-nav__link md-nav__link--active">
+      Developers Guide
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../papers/" title="Papers" class="md-nav__link">
+      Papers
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="prerequisites">Prerequisites</h1>
+<ol>
+<li>JDK 1.8</li>
+<li>Maven 3.5</li>
+<li>Node.js 8.9</li>
+</ol>
+<p>Please make sure that all the binaries are registered in your PATH.</p>
+<p>The package manager NPM is also required but is usually bundled with the Node.js installer.</p>
+<h1 id="getting-started-for-development">Getting Started for Development</h1>
+<p>This project is development environment agnostic. You can use an IDE or just the command line.</p>
+<h2 id="general-overview-of-the-software-architecture">General overview of the software architecture</h2>
+<p>The project is separated in two main parts: a <strong>backend</strong> and a <strong>frontend</strong>.</p>
+<p><img alt="It shows the architecture of the software. It shows two clear parts: backend and frontend" src="../img/Arquitecture_10.png?raw=true" title="Software arquitecture" /></p>
+<p>The <strong>backend</strong> is related to all the simulation logic and is implemented in Java.</p>
+<p>The folder <code>/backend-bikesurbanfleets</code> contains this part of the project.</p>
+<p>The <strong>frontend</strong> is related to all the GUI and data analysis of the simulations. It is implemented in TypeScript, using
+Angular and Electron.</p>
+<p>The folder <code>/frontend-bikesurbanfleets</code> contains this part of the project.</p>
+<h2 id="setup">Setup</h2>
+<ol>
+<li>First of all, be sure you have all the <a href="#prerequisites">Prerequisites</a> installed and working in your system.</li>
+<li>Execute this in the project directory.</li>
+</ol>
+<pre><code>npm install &amp;&amp; node fuse configure:dev
+</code></pre>
+
+<p>Below are recommended setups for common IDEs for <strong>backend</strong> and <strong>frontend</strong>.</p>
+<p>The easiest option is to use the Ultimate Edition of IDEA since it is the only IDE from IntelliJ that allows having
+modules of different technologies in one project. Alternatively the free community edition of IDEA can be used to
+develop the Java part in IDEA and the frontend might be developed in a free webdevelopment-tailored editor like Atom or
+VS Code.</p>
+<h2 id="backend-setup-ide">Backend - Setup IDE</h2>
+<h1 id="backend-setup-intellij-idea">Backend Setup - IntelliJ IDEA</h1>
+<h2 id="instructions">Instructions</h2>
+<h3 id="1-import-the-project">1. Import the project</h3>
+<ul>
+<li>Open IntelliJ IDEA. </li>
+<li>Select Import Project.</li>
+<li>The folder you should select is <code>/backend-bikesurbanfleets/</code></li>
+<li>Check this checkbox: <code>Search for projects recursively</code>, <code>Import Maven projects automatically</code> and <code>Create module groups for multi-module Maven Projects</code></li>
+</ul>
+<p><img alt="Gif with instructions to import the project" src="../gifs/backend_intellij_1.gif" /></p>
+<h3 id="2-run-the-project-with-intellij">2. Run the project with IntelliJ</h3>
+<p>As you can see this project is separated in modules. </p>
+<p><img alt="Modules image" src="../images/modules_intellij.png" /></p>
+<p>The module <code>bikesurbanfleets-config-usergenerator</code> generates users, and the module <code>bikesurbanfleets-core</code> simulates. 
+We should create two Run Configurations, one to generate users, and the other, to simulate, in order to run our code with the IDE.</p>
+<h4 id="users-generator-configuration">Users generator configuration</h4>
+<ul>
+<li>Click on <code>Run</code> &rarr; <code>Edit Configuration</code>.</li>
+<li>Select the button <code>+</code> &rarr; <code>Application</code> and name this Run Configuration as you want.</li>
+<li>Select in Main class the <code>Application.java</code> of the <code>backend-bikesurbanfleets-config-usersgenerator</code></li>
+<li>Inside <code>Program arguments</code>, copy and paste the next arguments: <a href="bikesurbanfleets-config-usergenerator_Args.md">Users generator arguments</a></li>
+<li>Select on <code>Use classpath of module</code> the module: <code>bikesurbanfleets-config-usersgenerator</code>.</li>
+<li>Click <code>Apply</code>, then click <code>Ok</code>.  </li>
+</ul>
+<p><img alt="Gif with instructions to import the project" src="../gifs/backend_intellij_2.gif" /></p>
+<h4 id="core-configuration">Core configuration</h4>
+<ul>
+<li>Click on <code>Run</code> &rarr; <code>Edit Configuration</code>.</li>
+<li>Select the button <code>+</code> &rarr; <code>Application</code>.</li>
+<li>Select in Main class the <code>Application.java</code> of the <code>backend-bikesurbanfleets-core</code> and name this Run Configuration as you want.</li>
+<li>Inside <code>Program arguments</code>, copy and paste the next arguments: <a href="bikesurbanfleets-core_Args.md">Core arguments</a></li>
+<li>Select on <code>Use classpath of module</code> the module: <code>bikesurbanfleets-core</code>.</li>
+<li>Click <code>Apply</code>, then click <code>Ok</code>.  </li>
+</ul>
+<p><img alt="Gif with instructions to import the project" src="../gifs/backend_intellij_3.gif" /></p>
+<h2 id="build-from-command-line">Build From Command Line</h2>
+<p>To build the backend execute:</p>
+<pre><code>node fuse build:dev-backend
+</code></pre>
+
+<p>To build the frontend and execute the GUI:</p>
+<pre><code>node fuse build:frontend
+</code></pre>
+
+<p>To build all the project:</p>
+<pre><code>node fuse build:dist
+</code></pre>
+
+<h1 id="distribute">Distribute</h1>
+<p>To distribute an executable or installer for your OS, just run</p>
+<pre><code>npm run distribute
+</code></pre>
+
+<p>Executables are generated in <code>build/dist/</code></p>
+<h1 id="fundamentals">Fundamentals</h1>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../users_guide/" title="Users Guide" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Users Guide
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../papers/" title="Papers" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Papers
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      
+      <script>app.initialize({version:"0.17.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
