@@ -5,4 +5,19 @@
      <lastmod>2018-07-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    <url>
+     <loc>/users_guide/</loc>
+     <lastmod>2018-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/developers_guide/</loc>
+     <lastmod>2018-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/papers/</loc>
+     <lastmod>2018-07-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
 </urlset>

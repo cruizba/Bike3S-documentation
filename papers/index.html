@@ -31,21 +31,21 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="./assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.2">
     
     
       
-        <title>Bike3S - Documentation</title>
+        <title>Papers - Bike3S - Documentation</title>
       
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.ba0fd1a6.css">
       
       
     
     
-      <script src="./assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -54,7 +54,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="./assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
   </head>
@@ -71,7 +71,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#bike3s-introduction" tabindex="1" class="md-skip">
+      <a href="#bike3s-papers" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -80,7 +80,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="." title="Bike3S - Documentation" class="md-header-nav__button md-logo">
+        <a href=".." title="Bike3S - Documentation" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -97,7 +97,7 @@
                 Bike3S - Documentation
               </span>
               <span class="md-header-nav__topic">
-                Introduction
+                Papers
               </span>
             
           
@@ -166,56 +166,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Introduction
-      </label>
-    
-    <a href="." title="Introduction" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href=".." title="Introduction" class="md-nav__link">
       Introduction
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#for-users" title="For Users" class="md-nav__link">
-    For Users
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#for-developers" title="For Developers" class="md-nav__link">
-    For Developers
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -225,7 +180,7 @@
 
 
   <li class="md-nav__item">
-    <a href="users_guide/" title="Users Guide" class="md-nav__link">
+    <a href="../users_guide/" title="Users Guide" class="md-nav__link">
       Users Guide
     </a>
   </li>
@@ -237,7 +192,7 @@
 
 
   <li class="md-nav__item">
-    <a href="developers_guide/" title="Developers Guide" class="md-nav__link">
+    <a href="../developers_guide/" title="Developers Guide" class="md-nav__link">
       Developers Guide
     </a>
   </li>
@@ -247,11 +202,20 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="papers/" title="Papers" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Papers" class="md-nav__link md-nav__link--active">
       Papers
     </a>
+    
   </li>
 
     
@@ -272,29 +236,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#for-users" title="For Users" class="md-nav__link">
-    For Users
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#for-developers" title="For Developers" class="md-nav__link">
-    For Developers
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -306,27 +247,18 @@
               
                 
                 
-                <h1 id="bike3s-introduction">Bike3S Introduction</h1>
-<p>Bike3S is a simulator created for the purpose of testing different behaviors in real bike sharing systems. 
-Bike sharing systems allow citizens to move between different places in an simple and economical way. Bike3S offers us the possibility to
-execute situations using different infrastructure configurations, user models and balancing algorithms.</p>
-<p>The motivation of this project is to search strategies to balance the system resources using systems, typically, based on incentives, which recommend the users to rent or return a bike in a certain station to contribute to the system balancing</p>
-<p>Here you'll find all the necessary documentation to use and develop new features in Bike3S.</p>
-<h2 id="for-users">For Users</h2>
-<p>If you just want to run the simulator with preconfigured user behaviors in different cities around the world, just follow the next guide:</p>
-<p><a href="users_guide/">Users Guide</a></p>
-<h2 id="for-developers">For Developers</h2>
-<p>If you are a developer or researcher and wants to create new things for the simulator, you should start here. With this guide you will learn to</p>
+                <h1 id="bike3s-papers">Bike3S Papers</h1>
+<ol>
+<li>
+<p>International Conference on Practical Applications of Agents and Multi-Agent Systems (PAAMS)</p>
 <ul>
-<li>Configure and prepare your system for development. <img alt="💻" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f4bb.png" title=":computer:" /></li>
-<li>Configure you're favorite IDE <img alt="🔨" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f528.png" title=":hammer:" /></li>
-<li>Learn the architecture and fundamentals of the simulator to implement new things. <img alt="📝" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f4dd.png" title=":pencil:" /></li>
-<li>Implement different users behaviors <img alt="🚴" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f6b4.png" title=":bicyclist:" /></li>
-<li>Implement your own recommendation system <img alt="📱" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f4f1.png" title=":iphone:" /> </li>
+<li>Link: https://doi.org/10.1007/978-3-319-94779-2_37</li>
+<li>PDF: <a href="../pdf/BikeSharingSimulator-PAAMS-2018.pdf">BikeSharingSimulator-PAAMS-2018</a></li>
+<li>Citation: </li>
 </ul>
-<p>And more...
-Feel free to see how to make all this fun stuff reading the Developers Guide:</p>
-<p><a href="developers_guide/">Developers Guide</a></p>
+<p><code>Fernández A., Timón S., Ruiz C., Cumplido T., Billhardt H., Dunkel J. (2018) A Bike Sharing System Simulator. In: Bajo J. et al. (eds) Highlights of Practical Applications of Agents, Multi-Agent Systems, and Complexity: The PAAMS Collection. PAAMS 2018. Communications in Computer and Information Science, vol 887. Springer, Cham</code></p>
+</li>
+</ol>
                 
                   
                 
@@ -347,20 +279,20 @@ Feel free to see how to make all this fun stuff reading the Developers Guide:</p
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-        
-          <a href="users_guide/" title="Users Guide" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../developers_guide/" title="Developers Guide" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  Previous
                 </span>
-                Users Guide
+                Developers Guide
               </span>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
           </a>
+        
         
       </nav>
     </div>
@@ -384,9 +316,9 @@ Feel free to see how to make all this fun stuff reading the Developers Guide:</p
       
     </div>
     
-      <script src="./assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../assets/javascripts/application.a59e2a89.js"></script>
       
-      <script>app.initialize({version:"0.17.4",url:{base:"."}})</script>
+      <script>app.initialize({version:"0.17.4",url:{base:".."}})</script>
       
     
     

@@ -2,23 +2,118 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Welcome to MkDocs"
+            "text": "Bike3S Introduction\n\n\nBike3S is a simulator created for the purpose of testing different behaviors in real bike sharing systems. \nBike sharing systems allow citizens to move between different places in an simple and economical way. Bike3S offers us the possibility to\nexecute situations using different infrastructure configurations, user models and balancing algorithms.\n\n\nThe motivation of this project is to search strategies to balance the system resources using systems, typically, based on incentives, which recommend the users to rent or return a bike in a certain station to contribute to the system balancing\n\n\nHere you'll find all the necessary documentation to use and develop new features in Bike3S.\n\n\nFor Users\n\n\nIf you just want to run the simulator with preconfigured user behaviors in different cities around the world, just follow the next guide:\n\n\nUsers Guide\n\n\nFor Developers\n\n\nIf you are a developer or researcher and wants to create new things for the simulator, you should start here. With this guide you will learn to\n\n\n\n\nConfigure and prepare your system for development. \n\n\nConfigure you're favorite IDE \n\n\nLearn the architecture and fundamentals of the simulator to implement new things. \n\n\nImplement different users behaviors \n\n\nImplement your own recommendation system \n \n\n\n\n\nAnd more...\nFeel free to see how to make all this fun stuff reading the Developers Guide:\n\n\nDevelopers Guide", 
+            "title": "Introduction"
         }, 
         {
-            "location": "/#welcome-to-mkdocs", 
-            "text": "For full documentation visit  mkdocs.org .", 
-            "title": "Welcome to MkDocs"
+            "location": "/#bike3s-introduction", 
+            "text": "Bike3S is a simulator created for the purpose of testing different behaviors in real bike sharing systems. \nBike sharing systems allow citizens to move between different places in an simple and economical way. Bike3S offers us the possibility to\nexecute situations using different infrastructure configurations, user models and balancing algorithms.  The motivation of this project is to search strategies to balance the system resources using systems, typically, based on incentives, which recommend the users to rent or return a bike in a certain station to contribute to the system balancing  Here you'll find all the necessary documentation to use and develop new features in Bike3S.", 
+            "title": "Bike3S Introduction"
         }, 
         {
-            "location": "/#commands", 
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Commands"
+            "location": "/#for-users", 
+            "text": "If you just want to run the simulator with preconfigured user behaviors in different cities around the world, just follow the next guide:  Users Guide", 
+            "title": "For Users"
         }, 
         {
-            "location": "/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Project layout"
+            "location": "/#for-developers", 
+            "text": "If you are a developer or researcher and wants to create new things for the simulator, you should start here. With this guide you will learn to   Configure and prepare your system for development.   Configure you're favorite IDE   Learn the architecture and fundamentals of the simulator to implement new things.   Implement different users behaviors   Implement your own recommendation system      And more...\nFeel free to see how to make all this fun stuff reading the Developers Guide:  Developers Guide", 
+            "title": "For Developers"
+        }, 
+        {
+            "location": "/users_guide/", 
+            "text": "Users Guide", 
+            "title": "Users Guide"
+        }, 
+        {
+            "location": "/users_guide/#users-guide", 
+            "text": "", 
+            "title": "Users Guide"
+        }, 
+        {
+            "location": "/developers_guide/", 
+            "text": "Prerequisites\n\n\n\n\nJDK 1.8\n\n\nMaven 3.5\n\n\nNode.js 8.9\n\n\n\n\nPlease make sure that all the binaries are registered in your PATH.\n\n\nThe package manager NPM is also required but is usually bundled with the Node.js installer.\n\n\nGetting Started for Development\n\n\nThis project is development environment agnostic. You can use an IDE or just the command line.\n\n\nGeneral overview of the software architecture\n\n\nThe project is separated in two main parts: a \nbackend\n and a \nfrontend\n.\n\n\n\n\nThe \nbackend\n is related to all the simulation logic and is implemented in Java.\n\n\nThe folder \n/backend-bikesurbanfleets\n contains this part of the project.\n\n\nThe \nfrontend\n is related to all the GUI and data analysis of the simulations. It is implemented in TypeScript, using\nAngular and Electron.\n\n\nThe folder \n/frontend-bikesurbanfleets\n contains this part of the project.\n\n\nSetup\n\n\n\n\nFirst of all, be sure you have all the \nPrerequisites\n installed and working in your system.\n\n\nExecute this in the project directory.\n\n\n\n\nnpm install \n node fuse configure:dev\n\n\n\n\nBelow are recommended setups for common IDEs for \nbackend\n and \nfrontend\n.\n\n\nThe easiest option is to use the Ultimate Edition of IDEA since it is the only IDE from IntelliJ that allows having\nmodules of different technologies in one project. Alternatively the free community edition of IDEA can be used to\ndevelop the Java part in IDEA and the frontend might be developed in a free webdevelopment-tailored editor like Atom or\nVS Code.\n\n\nBackend - Setup IDE\n\n\nBackend Setup - IntelliJ IDEA\n\n\nInstructions\n\n\n1. Import the project\n\n\n\n\nOpen IntelliJ IDEA. \n\n\nSelect Import Project.\n\n\nThe folder you should select is \n/backend-bikesurbanfleets/\n\n\nCheck this checkbox: \nSearch for projects recursively\n, \nImport Maven projects automatically\n and \nCreate module groups for multi-module Maven Projects\n\n\n\n\n\n\n2. Run the project with IntelliJ\n\n\nAs you can see this project is separated in modules. \n\n\n\n\nThe module \nbikesurbanfleets-config-usergenerator\n generates users, and the module \nbikesurbanfleets-core\n simulates. \nWe should create two Run Configurations, one to generate users, and the other, to simulate, in order to run our code with the IDE.\n\n\nUsers generator configuration\n\n\n\n\nClick on \nRun\n \n \nEdit Configuration\n.\n\n\nSelect the button \n+\n \n \nApplication\n and name this Run Configuration as you want.\n\n\nSelect in Main class the \nApplication.java\n of the \nbackend-bikesurbanfleets-config-usersgenerator\n\n\nInside \nProgram arguments\n, copy and paste the next arguments: \nUsers generator arguments\n\n\nSelect on \nUse classpath of module\n the module: \nbikesurbanfleets-config-usersgenerator\n.\n\n\nClick \nApply\n, then click \nOk\n.  \n\n\n\n\n\n\nCore configuration\n\n\n\n\nClick on \nRun\n \n \nEdit Configuration\n.\n\n\nSelect the button \n+\n \n \nApplication\n.\n\n\nSelect in Main class the \nApplication.java\n of the \nbackend-bikesurbanfleets-core\n and name this Run Configuration as you want.\n\n\nInside \nProgram arguments\n, copy and paste the next arguments: \nCore arguments\n\n\nSelect on \nUse classpath of module\n the module: \nbikesurbanfleets-core\n.\n\n\nClick \nApply\n, then click \nOk\n.  \n\n\n\n\n\n\nBuild From Command Line\n\n\nTo build the backend execute:\n\n\nnode fuse build:dev-backend\n\n\n\n\nTo build the frontend and execute the GUI:\n\n\nnode fuse build:frontend\n\n\n\n\nTo build all the project:\n\n\nnode fuse build:dist\n\n\n\n\nDistribute\n\n\nTo distribute an executable or installer for your OS, just run\n\n\nnpm run distribute\n\n\n\n\nExecutables are generated in \nbuild/dist/\n\n\nFundamentals", 
+            "title": "Developers Guide"
+        }, 
+        {
+            "location": "/developers_guide/#prerequisites", 
+            "text": "JDK 1.8  Maven 3.5  Node.js 8.9   Please make sure that all the binaries are registered in your PATH.  The package manager NPM is also required but is usually bundled with the Node.js installer.", 
+            "title": "Prerequisites"
+        }, 
+        {
+            "location": "/developers_guide/#getting-started-for-development", 
+            "text": "This project is development environment agnostic. You can use an IDE or just the command line.", 
+            "title": "Getting Started for Development"
+        }, 
+        {
+            "location": "/developers_guide/#general-overview-of-the-software-architecture", 
+            "text": "The project is separated in two main parts: a  backend  and a  frontend .   The  backend  is related to all the simulation logic and is implemented in Java.  The folder  /backend-bikesurbanfleets  contains this part of the project.  The  frontend  is related to all the GUI and data analysis of the simulations. It is implemented in TypeScript, using\nAngular and Electron.  The folder  /frontend-bikesurbanfleets  contains this part of the project.", 
+            "title": "General overview of the software architecture"
+        }, 
+        {
+            "location": "/developers_guide/#setup", 
+            "text": "First of all, be sure you have all the  Prerequisites  installed and working in your system.  Execute this in the project directory.   npm install   node fuse configure:dev  Below are recommended setups for common IDEs for  backend  and  frontend .  The easiest option is to use the Ultimate Edition of IDEA since it is the only IDE from IntelliJ that allows having\nmodules of different technologies in one project. Alternatively the free community edition of IDEA can be used to\ndevelop the Java part in IDEA and the frontend might be developed in a free webdevelopment-tailored editor like Atom or\nVS Code.", 
+            "title": "Setup"
+        }, 
+        {
+            "location": "/developers_guide/#backend-setup-ide", 
+            "text": "", 
+            "title": "Backend - Setup IDE"
+        }, 
+        {
+            "location": "/developers_guide/#backend-setup-intellij-idea", 
+            "text": "", 
+            "title": "Backend Setup - IntelliJ IDEA"
+        }, 
+        {
+            "location": "/developers_guide/#instructions", 
+            "text": "", 
+            "title": "Instructions"
+        }, 
+        {
+            "location": "/developers_guide/#1-import-the-project", 
+            "text": "Open IntelliJ IDEA.   Select Import Project.  The folder you should select is  /backend-bikesurbanfleets/  Check this checkbox:  Search for projects recursively ,  Import Maven projects automatically  and  Create module groups for multi-module Maven Projects", 
+            "title": "1. Import the project"
+        }, 
+        {
+            "location": "/developers_guide/#2-run-the-project-with-intellij", 
+            "text": "As you can see this project is separated in modules.    The module  bikesurbanfleets-config-usergenerator  generates users, and the module  bikesurbanfleets-core  simulates. \nWe should create two Run Configurations, one to generate users, and the other, to simulate, in order to run our code with the IDE.", 
+            "title": "2. Run the project with IntelliJ"
+        }, 
+        {
+            "location": "/developers_guide/#users-generator-configuration", 
+            "text": "Click on  Run     Edit Configuration .  Select the button  +     Application  and name this Run Configuration as you want.  Select in Main class the  Application.java  of the  backend-bikesurbanfleets-config-usersgenerator  Inside  Program arguments , copy and paste the next arguments:  Users generator arguments  Select on  Use classpath of module  the module:  bikesurbanfleets-config-usersgenerator .  Click  Apply , then click  Ok .", 
+            "title": "Users generator configuration"
+        }, 
+        {
+            "location": "/developers_guide/#core-configuration", 
+            "text": "Click on  Run     Edit Configuration .  Select the button  +     Application .  Select in Main class the  Application.java  of the  backend-bikesurbanfleets-core  and name this Run Configuration as you want.  Inside  Program arguments , copy and paste the next arguments:  Core arguments  Select on  Use classpath of module  the module:  bikesurbanfleets-core .  Click  Apply , then click  Ok .", 
+            "title": "Core configuration"
+        }, 
+        {
+            "location": "/developers_guide/#build-from-command-line", 
+            "text": "To build the backend execute:  node fuse build:dev-backend  To build the frontend and execute the GUI:  node fuse build:frontend  To build all the project:  node fuse build:dist", 
+            "title": "Build From Command Line"
+        }, 
+        {
+            "location": "/developers_guide/#distribute", 
+            "text": "To distribute an executable or installer for your OS, just run  npm run distribute  Executables are generated in  build/dist/", 
+            "title": "Distribute"
+        }, 
+        {
+            "location": "/developers_guide/#fundamentals", 
+            "text": "", 
+            "title": "Fundamentals"
+        }, 
+        {
+            "location": "/papers/", 
+            "text": "Bike3S Papers\n\n\n\n\n\n\nInternational Conference on Practical Applications of Agents and Multi-Agent Systems (PAAMS)\n\n\n\n\nLink: https://doi.org/10.1007/978-3-319-94779-2_37\n\n\nPDF: \nBikeSharingSimulator-PAAMS-2018\n\n\nCitation: \n\n\n\n\nFern\u00e1ndez A., Tim\u00f3n S., Ruiz C., Cumplido T., Billhardt H., Dunkel J. (2018) A Bike Sharing System Simulator. In: Bajo J. et al. (eds) Highlights of Practical Applications of Agents, Multi-Agent Systems, and Complexity: The PAAMS Collection. PAAMS 2018. Communications in Computer and Information Science, vol 887. Springer, Cham", 
+            "title": "Papers"
+        }, 
+        {
+            "location": "/papers/#bike3s-papers", 
+            "text": "International Conference on Practical Applications of Agents and Multi-Agent Systems (PAAMS)   Link: https://doi.org/10.1007/978-3-319-94779-2_37  PDF:  BikeSharingSimulator-PAAMS-2018  Citation:    Fern\u00e1ndez A., Tim\u00f3n S., Ruiz C., Cumplido T., Billhardt H., Dunkel J. (2018) A Bike Sharing System Simulator. In: Bajo J. et al. (eds) Highlights of Practical Applications of Agents, Multi-Agent Systems, and Complexity: The PAAMS Collection. PAAMS 2018. Communications in Computer and Information Science, vol 887. Springer, Cham", 
+            "title": "Bike3S Papers"
         }
     ]
 }
