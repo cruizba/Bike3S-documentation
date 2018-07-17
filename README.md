@@ -1,5 +1,5 @@
 # Bike3S-documentation
-This repository contains an [mkdocs](https://www.mkdocs.org/) project static html page with the documentation referred to the project Bike3S (https://github.com/stimonm/Bike3S)
+This repository contains a [mkdocs](https://www.mkdocs.org/) project static html page with the documentation referred to the project Bike3S (https://github.com/stimonm/Bike3S)
 
 ## Documentation site
 https://cruizba.github.io/Bike3S-documentation/
