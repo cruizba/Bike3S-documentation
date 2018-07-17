@@ -2,6 +2,7 @@
 1. JDK 1.8
 2. Maven 3.5
 3. Node.js 8.9
+4. Git
 
 Please make sure that all the binaries are registered in your PATH.
 
@@ -30,56 +31,25 @@ The folder `/frontend-bikesurbanfleets` contains this part of the project.
 1. First of all, be sure you have all the [Prerequisites](#prerequisites) installed and working in your system.
 2. Execute this in the project directory.
 ```
-npm install && node fuse configure:dev
+git clone https://github.com/stimonm/Bike3S.git
+cd Bike3S
+npm install
+node fuse configure:dev
 ```
 
-Below are recommended setups for common IDEs for **backend** and **frontend**.
+## Execute Frontend 
 
-The easiest option is to use the Ultimate Edition of IDEA since it is the only IDE from IntelliJ that allows having
-modules of different technologies in one project. Alternatively the free community edition of IDEA can be used to
-develop the Java part in IDEA and the frontend might be developed in a free webdevelopment-tailored editor like Atom or
-VS Code.
+You can now execute your program and try it just by running:
 
-## Backend - Setup IDE
+```
+node fuse build:frontend
+```
 
-# Backend Setup - IntelliJ IDEA
-## Instructions
 
-### 1. Import the project
- - Open IntelliJ IDEA. 
- - Select Import Project.
- - The folder you should select is `/backend-bikesurbanfleets/`
- - Check this checkbox: `Search for projects recursively`, `Import Maven projects automatically` and `Create module groups for multi-module Maven Projects`
- 
- ![Gif with instructions to import the project](gifs/backend_intellij_1.gif)
+## Execute Backend
 
-### 2. Run the project with IntelliJ
-As you can see this project is separated in modules. 
+TODO - Execute Backend users generator and Backend Users Core example
 
-![Modules image](images/modules_intellij.png)
-
-The module `bikesurbanfleets-config-usergenerator` generates users, and the module `bikesurbanfleets-core` simulates. 
-We should create two Run Configurations, one to generate users, and the other, to simulate, in order to run our code with the IDE.
-
-#### Users generator configuration 
-- Click on `Run` &rarr; `Edit Configuration`.
-- Select the button `+` &rarr; `Application` and name this Run Configuration as you want.
-- Select in Main class the `Application.java` of the `backend-bikesurbanfleets-config-usersgenerator`
-- Inside `Program arguments`, copy and paste the next arguments: [Users generator arguments](bikesurbanfleets-config-usergenerator_Args.md)
-- Select on `Use classpath of module` the module: `bikesurbanfleets-config-usersgenerator`.
-- Click `Apply`, then click `Ok`.  
-
-![Gif with instructions to import the project](gifs/backend_intellij_2.gif)
-
-#### Core configuration 
-- Click on `Run` &rarr; `Edit Configuration`.
-- Select the button `+` &rarr; `Application`.
-- Select in Main class the `Application.java` of the `backend-bikesurbanfleets-core` and name this Run Configuration as you want.
-- Inside `Program arguments`, copy and paste the next arguments: [Core arguments](bikesurbanfleets-core_Args.md)
-- Select on `Use classpath of module` the module: `bikesurbanfleets-core`.
-- Click `Apply`, then click `Ok`.  
-
-![Gif with instructions to import the project](gifs/backend_intellij_3.gif)
 
 ## Build From Command Line
 To build the backend execute:
@@ -104,4 +74,6 @@ npm run distribute
 Executables are generated in `build/dist/`
 
 # Fundamentals
+
+TODO - Link to pdf developer manual
 

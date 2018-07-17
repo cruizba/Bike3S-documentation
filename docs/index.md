@@ -18,11 +18,11 @@ If you just want to run the simulator with preconfigured user behaviors in diffe
 
 If you are a developer or researcher and wants to create new things for the simulator, you should start here. With this guide you will learn to
 
-* Configure and prepare your system for development. :computer:
-* Configure you're favorite IDE :hammer:
-* Learn the architecture and fundamentals of the simulator to implement new things. :pencil:
-* Implement different users behaviors :bicyclist:
-* Implement your own recommendation system :iphone:	
+* Configure and prepare your system for development.
+* Configure you're favorite IDE.
+* Learn the architecture and fundamentals of the simulator to implement new things.
+* Implement different users behaviors.
+* Implement your own recommendation system.
 
 And more...
 Feel free to see how to make all this fun stuff reading the Developers Guide:
