@@ -1,7 +1,7 @@
-# Bike3S Papers
+# Bike3S Publications
 1. International Conference on Practical Applications of Agents and Multi-Agent Systems (PAAMS)
     - Link: https://doi.org/10.1007/978-3-319-94779-2_37
-    - PDF: [BikeSharingSimulator-PAAMS-2018](pdf/BikeSharingSimulator-PAAMS-2018.pdf)
+    - Presentation: [BikeSharingSimulator-PAAMS-2018](pdf/BikeSharingSimulator-PAAMS-2018.pdf)
     - Citation: 
 
     ```

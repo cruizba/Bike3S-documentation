@@ -37,7 +37,7 @@ Below are recommended setups for common IDEs for **backend** and **frontend**.
 
 The easiest option is to use the Ultimate Edition of IDEA since it is the only IDE from IntelliJ that allows having
 modules of different technologies in one project. Alternatively the free community edition of IDEA can be used to
-develop the Java part in IDEA and the frontend might be developed in a free webdevelopment-tailored editor like Atom or
+develop the Java part in IDEA and the frontend might be developed in a free web development-tailored editor like Atom or
 VS Code.
 
 ## Backend - Setup IDE
