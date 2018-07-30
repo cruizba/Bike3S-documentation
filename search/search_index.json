@@ -82,13 +82,13 @@
         }, 
         {
             "location": "/publications/", 
-            "text": "Bike3S Papers\n\n\n\n\nFern\u00e1ndez A., Tim\u00f3n S., Ruiz C., Cumplido T., Billhardt H., Dunkel J. (2018) A Bike Sharing System Simulator. In: Bajo J. et al. (eds) Highlights of Practical Applications of Agents, Multi-Agent Systems, and Complexity: The PAAMS Collection. PAAMS 2018. Communications in Computer and Information Science, vol 887. Springer, Cham\n\n\nLink: \nhttps://doi.org/10.1007/978-3-319-94779-2_37\n\n\nPDF: \nBikeSharingSimulator-PAAMS-2018", 
+            "text": "Bike3S Publications\n\n\n\n\nFern\u00e1ndez A., Tim\u00f3n S., Ruiz C., Cumplido T., Billhardt H., Dunkel J. (2018) A Bike Sharing System Simulator. In: Bajo J. et al. (eds) Highlights of Practical Applications of Agents, Multi-Agent Systems, and Complexity: The PAAMS Collection. PAAMS 2018. Communications in Computer and Information Science, vol 887. Springer, Cham\n\n\nLink: \nhttps://doi.org/10.1007/978-3-319-94779-2_37\n\n\nPresentation: \nBikeSharingSimulator-PAAMS-2018", 
             "title": "Publications"
         }, 
         {
-            "location": "/publications/#bike3s-papers", 
-            "text": "Fern\u00e1ndez A., Tim\u00f3n S., Ruiz C., Cumplido T., Billhardt H., Dunkel J. (2018) A Bike Sharing System Simulator. In: Bajo J. et al. (eds) Highlights of Practical Applications of Agents, Multi-Agent Systems, and Complexity: The PAAMS Collection. PAAMS 2018. Communications in Computer and Information Science, vol 887. Springer, Cham  Link:  https://doi.org/10.1007/978-3-319-94779-2_37  PDF:  BikeSharingSimulator-PAAMS-2018", 
-            "title": "Bike3S Papers"
+            "location": "/publications/#bike3s-publications", 
+            "text": "Fern\u00e1ndez A., Tim\u00f3n S., Ruiz C., Cumplido T., Billhardt H., Dunkel J. (2018) A Bike Sharing System Simulator. In: Bajo J. et al. (eds) Highlights of Practical Applications of Agents, Multi-Agent Systems, and Complexity: The PAAMS Collection. PAAMS 2018. Communications in Computer and Information Science, vol 887. Springer, Cham  Link:  https://doi.org/10.1007/978-3-319-94779-2_37  Presentation:  BikeSharingSimulator-PAAMS-2018", 
+            "title": "Bike3S Publications"
         }
     ]
 }
