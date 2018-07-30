@@ -213,8 +213,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../papers/" title="Papers" class="md-nav__link">
-      Papers
+    <a href="../publications/" title="Publications" class="md-nav__link">
+      Publications
     </a>
   </li>
 
@@ -252,6 +252,7 @@
 <li>JDK 1.8</li>
 <li>Maven 3.5</li>
 <li>Node.js 8.9</li>
+<li>Git</li>
 </ol>
 <p>Please make sure that all the binaries are registered in your PATH.</p>
 <p>The package manager NPM is also required but is usually bundled with the Node.js installer.</p>
@@ -270,50 +271,19 @@ Angular and Electron.</p>
 <li>First of all, be sure you have all the <a href="#prerequisites">Prerequisites</a> installed and working in your system.</li>
 <li>Execute this in the project directory.</li>
 </ol>
-<pre><code>npm install &amp;&amp; node fuse configure:dev
+<pre><code>git clone https://github.com/stimonm/Bike3S.git
+cd Bike3S
+npm install
+node fuse configure:dev
 </code></pre>
 
-<p>Below are recommended setups for common IDEs for <strong>backend</strong> and <strong>frontend</strong>.</p>
-<p>The easiest option is to use the Ultimate Edition of IDEA since it is the only IDE from IntelliJ that allows having
-modules of different technologies in one project. Alternatively the free community edition of IDEA can be used to
-develop the Java part in IDEA and the frontend might be developed in a free webdevelopment-tailored editor like Atom or
-VS Code.</p>
-<h2 id="backend-setup-ide">Backend - Setup IDE</h2>
-<h1 id="backend-setup-intellij-idea">Backend Setup - IntelliJ IDEA</h1>
-<h2 id="instructions">Instructions</h2>
-<h3 id="1-import-the-project">1. Import the project</h3>
-<ul>
-<li>Open IntelliJ IDEA. </li>
-<li>Select Import Project.</li>
-<li>The folder you should select is <code>/backend-bikesurbanfleets/</code></li>
-<li>Check this checkbox: <code>Search for projects recursively</code>, <code>Import Maven projects automatically</code> and <code>Create module groups for multi-module Maven Projects</code></li>
-</ul>
-<p><img alt="Gif with instructions to import the project" src="../gifs/backend_intellij_1.gif" /></p>
-<h3 id="2-run-the-project-with-intellij">2. Run the project with IntelliJ</h3>
-<p>As you can see this project is separated in modules. </p>
-<p><img alt="Modules image" src="../images/modules_intellij.png" /></p>
-<p>The module <code>bikesurbanfleets-config-usergenerator</code> generates users, and the module <code>bikesurbanfleets-core</code> simulates. 
-We should create two Run Configurations, one to generate users, and the other, to simulate, in order to run our code with the IDE.</p>
-<h4 id="users-generator-configuration">Users generator configuration</h4>
-<ul>
-<li>Click on <code>Run</code> &rarr; <code>Edit Configuration</code>.</li>
-<li>Select the button <code>+</code> &rarr; <code>Application</code> and name this Run Configuration as you want.</li>
-<li>Select in Main class the <code>Application.java</code> of the <code>backend-bikesurbanfleets-config-usersgenerator</code></li>
-<li>Inside <code>Program arguments</code>, copy and paste the next arguments: <a href="bikesurbanfleets-config-usergenerator_Args.md">Users generator arguments</a></li>
-<li>Select on <code>Use classpath of module</code> the module: <code>bikesurbanfleets-config-usersgenerator</code>.</li>
-<li>Click <code>Apply</code>, then click <code>Ok</code>.  </li>
-</ul>
-<p><img alt="Gif with instructions to import the project" src="../gifs/backend_intellij_2.gif" /></p>
-<h4 id="core-configuration">Core configuration</h4>
-<ul>
-<li>Click on <code>Run</code> &rarr; <code>Edit Configuration</code>.</li>
-<li>Select the button <code>+</code> &rarr; <code>Application</code>.</li>
-<li>Select in Main class the <code>Application.java</code> of the <code>backend-bikesurbanfleets-core</code> and name this Run Configuration as you want.</li>
-<li>Inside <code>Program arguments</code>, copy and paste the next arguments: <a href="bikesurbanfleets-core_Args.md">Core arguments</a></li>
-<li>Select on <code>Use classpath of module</code> the module: <code>bikesurbanfleets-core</code>.</li>
-<li>Click <code>Apply</code>, then click <code>Ok</code>.  </li>
-</ul>
-<p><img alt="Gif with instructions to import the project" src="../gifs/backend_intellij_3.gif" /></p>
+<h2 id="execute-frontend">Execute Frontend</h2>
+<p>You can now execute your program and try it just by running:</p>
+<pre><code>node fuse build:frontend
+</code></pre>
+
+<h2 id="execute-backend">Execute Backend</h2>
+<p>TODO - Execute Backend users generator and Backend Users Core example</p>
 <h2 id="build-from-command-line">Build From Command Line</h2>
 <p>To build the backend execute:</p>
 <pre><code>node fuse build:dev-backend
@@ -334,6 +304,7 @@ We should create two Run Configurations, one to generate users, and the other, t
 
 <p>Executables are generated in <code>build/dist/</code></p>
 <h1 id="fundamentals">Fundamentals</h1>
+<p>TODO - Link to pdf developer manual</p>
                 
                   
                 
@@ -369,13 +340,13 @@ We should create two Run Configurations, one to generate users, and the other, t
           </a>
         
         
-          <a href="../papers/" title="Papers" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../publications/" title="Publications" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Papers
+                Publications
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
