@@ -1,6 +1,6 @@
 site_name: Bike3S - Documentation
 theme: material
-pages:
+nav:
   - Introduction: index.md
   - Users Guide: users_guide.md
   - Developers Guide: developers_guide.md
