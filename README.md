@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/cruizba/Bike3S-documentation.svg?branch=master)](https://travis-ci.org/cruizba/Bike3S-documentation)
 # Bike3S-documentation
 This repository contains a [mkdocs](https://www.mkdocs.org/) project static html page with the documentation referred to the project Bike3S (https://github.com/stimonm/Bike3S)
 
